@@ -22,7 +22,7 @@ const Reservation = () => {
     const handleReservation = async (e) => {
         e.preventDefault();
         try {
-            const {data} = await axios.post('http://localhost:8000/api/v1/reservation/send', formData,{
+            const {data} = await axios.post(`${process.env.BACKEND_BASE_URL}/api/v1/reservation/send`, formData,{
                 headers:{
                     "Content-Type":"application/json"
                 },
