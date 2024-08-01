@@ -8,7 +8,7 @@ dotenv.config({path:"./config/config.env"})
 const app = express()
 // CORS configuration
 const corsOptions = {
-    origin: [process.env.FRONTEND_URL, "http://localhost:5173"],
+    origin: [process.env.FRONTEND_URL, "http://localhost:5173", "https://restaurant-frontend-d6c9s6csc-faizan-khans-projects-03315362.vercel.app"],
     methods: ['GET', 'POST', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Authorization'],
     credentials: true,
